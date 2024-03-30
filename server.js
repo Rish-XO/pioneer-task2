@@ -4,8 +4,8 @@ const axios = require('axios');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// API endpoint to fetch data from public API with filtering options
-app.get('/api/public-apis', async (req, res) => {
+// API endpoint to fetch data
+app.get('/data-api', async (req, res) => {
   try {
     // Fetch data from the public API
     const response = await axios.get('https://api.publicapis.org/entries');
